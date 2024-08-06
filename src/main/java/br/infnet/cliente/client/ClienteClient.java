@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ClienteClient {
 
     @GetMapping("/msg")
-    String getProducerMessage();
+    String getMenssageiro();
 }

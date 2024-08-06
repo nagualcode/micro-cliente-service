@@ -10,12 +10,12 @@ public class ClienteController {
 
     private final ClienteClient menssageiroClient;
 
-    public ClienteController(ClienteClient producerClient) {
-        this.menssageiroClient = producerClient;
+    public ClienteController(ClienteClient menssageiroClient) {
+        this.menssageiroClient = menssageiroClient;
     }
 
     @GetMapping("/cliente")
-    public String consume() {
-        return menssageiroClient.getProducerMessage();
+    public String receba() {
+        return menssageiroClient.getMenssageiro();
     }
 }
